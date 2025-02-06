@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CaterServ - Catering Services Website </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="static/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="static/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="/index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="/index.html" class="nav-item nav-link active">Home</a>
+                            <a href="/about.html" class="nav-item nav-link">About</a>
+                            <a href="/service.html" class="nav-item nav-link">Services</a>
+                            <a href="/event.html" class="nav-item nav-link">Events</a>
+                            <a href="/menu.html" class="nav-item nav-link">Menu</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu bg-light">
+                                    <a href="/book.html" class="dropdown-item">Booking</a>
+                                    <a href="/blog.html" class="dropdown-item">Our Blog</a>
+                                    <a href="/team.html" class="dropdown-item">Our Team</a>
+                                    <a href="/testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="/404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="/contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                        <a href="/login.html " class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login Here</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to CaterServ</small>
+                        <h1 class="display-1 mb-4 animated bounceInDown">Book <span class="text-primary">Cater</span>Serv For Your Dream Event</h1>
+                        <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book Now</a>
+                        <a href="" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <img src="static/img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Satrt -->
+        <div class="container-fluid py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <img src="static/img/about.jpg" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
+                        <h1 class="display-5 mb-4">Trusted By 200 + satisfied clients</h1>
+                        <p class="mb-4">Dedicated to excellence, we strive to deliver top-quality service with precision and care. We ensure a seamless experience by upholding the highest standards in every aspect of our work. <br>Our commitment is to provide exceptional service, ensuring customer satisfaction at every step.</p>
+                        <div class="row g-4 text-dark mb-5">
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Fresh and Fast food Delivery
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>24/7 Customer Support
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Easy Customization Options
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Delicious Deals for Delicious Meals
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Fact Start-->
+        <div class="container-fluid faqt py-6">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                       <div class="row g-4">
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-users fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">689</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Happy Customers</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-users-cog fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">107</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Expert Chefs</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-check fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">253</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Events Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="video">
+                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Services</small>
+                    <h1 class="display-5 mb-5">What We Offer</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Wedding Services</h4>
+                                    <p class="mb-4">Creating unforgettable moments with elegant catering and seamless service for your perfect wedding day.</p><br>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#weddingServices">Read More</button>
+                                    <div id="weddingServices" class="collapse mt-3">
+                                        <p>Our wedding catering service offers personalized menus and professional service to ensure your special day is flawless. Whether it's an intimate gathering or a grand celebration, we ensure every detail is taken care of with exceptional quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Corporate Catering</h4>
+                                    <p class="mb-4">Professional catering tailored for your corporate events—delicious, seamless, and designed to impress.</p><br>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#corporateCatering">Read More</button>
+                                    <div id="corporateCatering" class="collapse mt-3">
+                                        <p>From business meetings to large conferences, we offer a wide range of corporate catering options that perfectly complement your company's needs. Our menu is customizable, featuring everything from light snacks to full-course meals, delivered with precision and professionalism.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-hotdog fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Cocktail Reception</h4>
+                                    <p class="mb-4">Transform your cocktail reception with exquisite drinks, delectable bites, and a sophisticated atmosphere that wow your guests.</p>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#cocktailReception">Read More</button>
+                                    <div id="cocktailReception" class="collapse mt-3">
+                                        <p>Our cocktail reception services combine luxury and flavor, offering a selection of expertly crafted cocktails and delicious appetizers. Whether hosting a networking event or an intimate gathering, we provide the perfect setting for socializing and enjoying fine drinks and food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-hamburger fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Bento Catering</h4>
+                                    <p class="mb-4">Delight your guests with perfectly crafted Bento boxes, offering a delicious and convenient dining experience for any occasion.</p><br>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#bentoCatering">Read More</button>
+                                    <div id="bentoCatering" class="collapse mt-3">
+                                        <p>Our Bento catering service offers beautifully packaged meals that combine variety, freshness, and taste in a convenient, portable form. Perfect for both casual and formal events, these boxes are customized to suit your guest's preferences and dietary needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-wine-glass-alt fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Pub Party</h4>
+                                    <p class="mb-4">Turn your pub party into an unforgettable celebration with vibrant drinks, tasty bites, and a lively atmosphere that keeps the energy high all night!</p>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#pubParty">Read More</button>
+                                    <div id="pubParty" class="collapse mt-3">
+                                        <p>Our pub party catering is designed to energize your guests with dynamic drinks and mouthwatering snacks, creating an exciting and fun-filled event. From late-night bites to signature cocktails, we provide everything you need for an unforgettable celebration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-walking fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Home Delivery</h4>
+                                    <p class="mb-4">Enjoy delicious meals delivered straight to your door, bringing restaurant-quality dining to the comfort of your home.</p><br>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#homeDelivery">Read More</button>
+                                    <div id="homeDelivery" class="collapse mt-3">
+                                        <p>Our home delivery service ensures you enjoy a variety of meals at your convenience. Choose from our menu of mouthwatering dishes and have them delivered directly to your doorstep, maintaining restaurant-quality standards with every bite.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-wheelchair fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Sit-down Catering</h4>
+                                    <p class="mb-4">Experience elegance and comfort with our sit-down catering, offering a refined dining experience tailored to your event's unique style.</p>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#sitDownCatering">Read More</button>
+                                    <div id="sitDownCatering" class="collapse mt-3">
+                                        <p>Our sit-down catering service provides an elegant dining experience with beautifully plated dishes, impeccable service, and a focus on creating a luxurious atmosphere. Perfect for weddings, gala dinners, or other formal occasions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <i class="fas fa-utensils fa-7x text-primary mb-4"></i>
+                                    <h4 class="mb-3">Buffet Catering</h4>
+                                    <p class="mb-4">Delight your guests with a sumptuous buffet, featuring a variety of flavorful dishes to suit every taste and create a memorable dining experience.</p>
+                                    <button class="btn btn-primary px-4 py-2 rounded-pill" data-toggle="collapse" data-target="#buffetCatering">Read More</button>
+                                    <div id="buffetCatering" class="collapse mt-3">
+                                        <p>Our buffet catering service offers a wide selection of dishes, from appetizers to desserts, providing your guests with a variety of options to suit all tastes. Perfect for larger gatherings, our buffets are designed to create a vibrant and communal dining experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Events Start -->
+        <div class="container-fluid event py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest Events</small>
+                    <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                <span class="text-dark" style="width: 150px;">All Events</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                <span class="text-dark" style="width: 150px;">Wedding</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                <span class="text-dark" style="width: 150px;">Corporate</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                <span class="text-dark" style="width: 150px;">Cocktail</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                <span class="text-dark" style="width: 150px;">Buffet</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-1.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="static/img/event-1.jpg" data-lightbox="event-1" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-2.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="static/img/event-2.jpg" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-3.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="static/img/event-3.jpg" data-lightbox="event-3" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-4.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="static/img/event-4.jpg" data-lightbox="event-4" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-5.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="static/img/event-5.jpg" data-lightbox="event-5" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-6.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="static/img/event-6.jpg" data-lightbox="event-6" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-7.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="static/img/event-7.jpg" data-lightbox="event-7" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-8.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="static/img/event-8.jpg" data-lightbox="event-17" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-1.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-8" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-2.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-9" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-3.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-10" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-4.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-11" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-5.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-12" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-6.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-13" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-7.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-14" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="static/img/event-8.jpg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="static/img/01.jpg" data-lightbox="event-15" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Events End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-fluid menu bg-light py-6 my-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Menu</small>
+                    <h1 class="display-5 mb-5">Most Popular Food in the World</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active" data-bs-toggle="pill" href="#tab-6">
+                                <span class="text-dark" style="width: 150px;">Starter</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-7">
+                                <span class="text-dark" style="width: 150px;">Main Course</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-8">
+                                <span class="text-dark" style="width: 150px;">Drinks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-9">
+                                <span class="text-dark" style="width: 150px;">Offers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-10">
+                                <span class="text-dark" style="width: 150px;">Our Spesial</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-6" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-01.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Vegetable Pakora</h4>
+                                                <h4 class="text-primary">₹150</h4>
+                                            </div>
+                                            <p class="mb-0">Crispy, deep-fried fritters made from mixed vegetables, chickpea flour, and spices, served with chutney.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-02.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Hara Bhara Kebab</h4>
+                                                <h4 class="text-primary">₹180</h4>
+                                            </div>
+                                            <p class="mb-0">A vegetarian kebab made from spinach, peas, and potatoes, spiced and grilled to perfection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-03.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Veg Seekh Kebab</h4>
+                                                <h4 class="text-primary">₹200</h4>
+                                            </div>
+                                            <p class="mb-0">Skewered, minced vegetable kebabs with Indian spices, grilled to give a smoky flavor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.4s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-04.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Samosa</h4>
+                                                <h4 class="text-primary">₹80</h4>
+                                            </div>
+                                            <p class="mb-0">A popular Indian snack with a crispy pastry shell, filled with spiced potatoes, peas, and herbs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.5s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-05.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Paneer Pakora</h4>
+                                                <h4 class="text-primary">₹220</h4>
+                                            </div>
+                                            <p class="mb-0">Chunks of paneer (cottage cheese) dipped in seasoned chickpea flour batter and deep-fried to golden perfection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.6s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-06.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Onion Bhaji</h4>
+                                                <h4 class="text-primary">₹130</h4>
+                                            </div>
+                                            <p class="mb-0">Crispy fried onion fritters spiced with curry leaves and cumin, served with tangy tamarind chutney.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.7s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Moong Dal Chilla</h4>
+                                                <h4 class="text-primary">₹120</h4>
+                                            </div>
+                                            <p class="mb-0">Savory pancakes made with moong dal (yellow lentils) and spices, served with mint chutney.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.8s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-08.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Vegetable Cutlet</h4>
+                                                <h4 class="text-primary">₹100</h4>
+                                            </div>
+                                            <p class="mb-0">Crispy deep-fried patties made from mashed vegetables, served with ketchup or chutney.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-7" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-01.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Paneer Butter Masala</h4>
+                                                <h4 class="text-primary">₹250</h4>
+                                            </div>
+                                            <p class="mb-0">A rich and creamy dish made with paneer cubes in a spiced tomato-based gravy, served with naan or rice.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-03.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Chicken Tikka Masala</h4>
+                                                <h4 class="text-primary">₹300</h4>
+                                            </div>
+                                            <p class="mb-0">Marinated chicken pieces cooked in a creamy, flavorful tomato sauce, served with naan or rice.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-05.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Shahi Paneer</h4>
+                                                <h4 class="text-primary">₹280</h4>
+                                            </div>
+                                            <p class="mb-0">Paneer cubes cooked in a luxurious, creamy gravy made with cashew nuts, milk, and aromatic spices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Dal Tadka</h4>
+                                                <h4 class="text-primary">₹150</h4>
+                                            </div>
+                                            <p class="mb-0">A classic dish made from yellow lentils cooked with garlic, cumin, and ghee, offering a comforting taste.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-08.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Butter Chicken</h4>
+                                                <h4 class="text-primary">₹350</h4>
+                                            </div>
+                                            <p class="mb-0">A famous dish of chicken cooked in a rich tomato gravy with butter, cream, and a blend of spices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-03.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Paneer Lababdar</h4>
+                                                <h4 class="text-primary">₹270</h4>
+                                            </div>
+                                            <p class="mb-0">Soft paneer pieces in a smooth, rich, spiced gravy made with tomatoes, cream, and aromatic masalas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-02.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Lamb Rogan Josh</h4>
+                                                <h4 class="text-primary">₹400</h4>
+                                            </div>
+                                            <p class="mb-0">Tender lamb pieces slow-cooked in a flavorful gravy of yogurt, spices, and Kashmiri red chili for a rich taste.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-01.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Chole Bhature</h4>
+                                                <h4 class="text-primary">₹220</h4>
+                                            </div>
+                                            <p class="mb-0">A popular Punjabi dish consisting of spicy chickpeas served with deep-fried fluffy bhature (bread).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-8" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-01.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Mango Mojito</h4>
+                                                <h4 class="text-primary">₹150</h4>
+                                            </div>
+                                            <p class="mb-0">A refreshing mocktail with the tropical flavor of mango combined with mint and lime, perfect for a summer day.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-02.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Virgin Pina Colada</h4>
+                                                <h4 class="text-primary">₹180</h4>
+                                            </div>
+                                            <p class="mb-0">A creamy and indulgent mocktail made with coconut milk, pineapple juice, and a splash of lime.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-03.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Blue Lagoon</h4>
+                                                <h4 class="text-primary">₹160</h4>
+                                            </div>
+                                            <p class="mb-0">A vibrant and zesty drink made with blue curaçao syrup, lemon juice, and a hint of soda for that perfect kick.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-04.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Strawberry Fizz</h4>
+                                                <h4 class="text-primary">₹140</h4>
+                                            </div>
+                                            <p class="mb-0">A fizzy and fruity mocktail made with fresh strawberries, sparkling water, and a touch of sweetness.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-05.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Citrus Punch</h4>
+                                                <h4 class="text-primary">₹130</h4>
+                                            </div>
+                                            <p class="mb-0">A tangy and refreshing mocktail made with orange, lemon, and a splash of grenadine, perfect for a revitalizing experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-06.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Mint Lemonade</h4>
+                                                <h4 class="text-primary">₹120</h4>
+                                            </div>
+                                            <p class="mb-0">A refreshing drink combining lemon juice, mint, and sugar syrup for a perfect balance of sweet and sour.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Pineapple Spritz</h4>
+                                                <h4 class="text-primary">₹160</h4>
+                                            </div>
+                                            <p class="mb-0">A tropical mocktail made with pineapple juice, soda, and a dash of orange bitters to give you a fizzy and zesty experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-08.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Apple Spice</h4>
+                                                <h4 class="text-primary">₹150</h4>
+                                            </div>
+                                            <p class="mb-0">A warm and comforting mocktail made with apple juice, cinnamon, and nutmeg, perfect for a cozy evening.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-9" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <!-- Combo 1: Chole Bhature + Lassi -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-06.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Chole Bhature Combo</h4>
+                                                <h4 class="text-primary"><del>₹900</del> <span class="text-success">₹750</span></h4>
+                                            </div>
+                                            <p class="mb-0">A classic North Indian combo of spicy chickpeas (Chole) served with deep-fried fluffy bread (Bhature), paired with a refreshing glass of sweet Lassi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Combo 2: Paneer Tikka + Masala Naan -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Paneer Tikka Combo</h4>
+                                                <h4 class="text-primary"><del>₹1000</del> <span class="text-success">₹850</span></h4>
+                                            </div>
+                                            <p class="mb-0">Soft and spicy marinated paneer cubes grilled to perfection, served with a side of garlic Masala Naan for a rich, filling meal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Combo 3: Biryani + Raita -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-09.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Chicken Biryani Combo</h4>
+                                                <h4 class="text-primary"><del>₹1100</del> <span class="text-success">₹950</span></h4>
+                                            </div>
+                                            <p class="mb-0">Aromatic basmati rice cooked with tender chicken pieces, flavored with saffron and spices, served with a cooling yogurt-based Raita.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Combo 4: Samosa + Chai -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-02.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Samosa & Chai Combo</h4>
+                                                <h4 class="text-primary"><del>₹250</del> <span class="text-success">₹200</span></h4>
+                                            </div>
+                                            <p class="mb-0">A quick snack combo consisting of two crispy, spicy Samosas paired with a hot cup of traditional masala Chai, perfect for tea-time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Combo 5: Butter Chicken + Naan -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-03.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Butter Chicken Combo</h4>
+                                                <h4 class="text-primary"><del>₹950</del> <span class="text-success">₹850</span></h4>
+                                            </div>
+                                            <p class="mb-0">A creamy, rich Butter Chicken curry served with soft and buttery Naan, making this a perfect North Indian meal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Combo 6: Masala Dosa + Coconut Chutney -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-05.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Masala Dosa Combo</h4>
+                                                <h4 class="text-primary"><del>₹180</del> <span class="text-success">₹150</span></h4>
+                                            </div>
+                                            <p class="mb-0">A crispy, thin rice crepe stuffed with spiced mashed potatoes, served with tangy coconut chutney and flavorful sambar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Combo 7: Pani Puri + Jaljeera -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Pani Puri Combo</h4>
+                                                <h4 class="text-primary"><del>₹300</del> <span class="text-success">₹250</span></h4>
+                                            </div>
+                                            <p class="mb-0">Crispy, hollow puris filled with spicy, tangy water, served with sweet tamarind chutney and a refreshing glass of Jaljeera.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Combo 8: Vada Pav + Buttermilk -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-09.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Vada Pav Combo</h4>
+                                                <h4 class="text-primary"><del>₹150</del> <span class="text-success">₹120</span></h4>
+                                            </div>
+                                            <p class="mb-0">A delicious Mumbai street food combo consisting of a spicy vada (potato fritter) in a soft pav (bun), served with cooling buttermilk.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div id="tab-10" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <!-- Special Item 1: Royal Feast Combo -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-06.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Royal Feast Combo</h4>
+                                                <h4 class="text-primary">₹499</h4>
+                                            </div>
+                                            <p class="mb-0">Indulge in the grand flavors of our special Royal Feast Combo, including a mouthwatering mix of butter chicken, fragrant biryani, and freshly baked naan. A meal fit for royalty, now at a special price just for you!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Special Item 2: Super Sizzler Combo -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Super Sizzler Combo</h4>
+                                                <h4 class="text-primary">₹399</h4>
+                                            </div>
+                                            <p class="mb-0">A sizzling sensation! Enjoy a perfectly grilled mix of chicken, paneer, and vegetables served on a hot plate with a tangy sauce. Feel the excitement of every bite with our Super Sizzler Combo – a crowd favorite!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Special Item 3: Exotic South Indian Delight -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-09.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Exotic South Indian Delight</h4>
+                                                <h4 class="text-primary">₹349</h4>
+                                            </div>
+                                            <p class="mb-0">Transport yourself to the heart of South India with this exotic combo. Savor crispy dosas, spicy sambar, and a side of coconut chutney. A delightful blend of flavors to brighten up your day!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Special Item 4: Signature Tandoori Platter -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-02.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Signature Tandoori Platter</h4>
+                                                <h4 class="text-primary">₹599</h4>
+                                            </div>
+                                            <p class="mb-0">Experience the authentic taste of India with our Signature Tandoori Platter. Enjoy tender chicken tandoori, juicy seekh kebabs, and flavorful tandoori veggies all grilled to perfection and served with mint chutney!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Special Item 5: Ultimate Desi Street Food Combo -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-03.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Ultimate Desi Street Food Combo</h4>
+                                                <h4 class="text-primary">₹299</h4>
+                                            </div>
+                                            <p class="mb-0">Bring the vibrant flavors of Indian street food to your table with our Ultimate Desi Street Food Combo. Enjoy crispy samosas, tangy golgappas, and spicy pav bhaji – a truly unforgettable taste of India!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Special Item 6: Chef’s Special Biryani Delight -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-05.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Chef’s Special Biryani Delight</h4>
+                                                <h4 class="text-primary">₹450</h4>
+                                            </div>
+                                            <p class="mb-0">A feast for the senses, our Chef’s Special Biryani is made with handpicked spices, perfectly cooked rice, and tender, flavorful meat. Each bite is a celebration of aromatic, rich, and authentic flavors that will leave you craving more!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Special Item 7: Family Feast Combo -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-07.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Family Feast Combo</h4>
+                                                <h4 class="text-primary">₹799</h4>
+                                            </div>
+                                            <p class="mb-0">The perfect meal for families! This hearty combo includes a large portion of flavorful biryani, a mixed grill platter, a large side of raita, and soft, buttery naan – everything you need to enjoy a meal together!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Special Item 8: Vegan Delight Combo -->
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="static/img/menu-09.jpg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Vegan Delight Combo</h4>
+                                                <h4 class="text-primary">₹349</h4>
+                                            </div>
+                                            <p class="mb-0">For our health-conscious and vegan customers, we present the Vegan Delight Combo! Savor the goodness of sautéed vegetables, tofu curry, and a side of brown rice – a nourishing, plant-based meal packed with flavor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Book Us Start -->
+        <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-1">
+                        <img src="static/img/background-site.jpg" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                    </div>
+                    <div class="col-10">
+                        <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                            <div class="text-center">
+                                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Book Us</small>
+                                <h1 class="display-5 mb-5">Where you want Our Services</h1>
+                            </div>
+                            <div class="row g-4 form">
+                                <!-- Country Selection -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Select Country">
+                                        <option selected>Select Country</option>
+                                        <option value="1">USA</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">India</option>
+                                        <option value="4">Canada</option>
+                                        <option value="5">Australia</option>
+                                        <option value="6">Germany</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- City Selection Based on Country -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Select City">
+                                        <option selected>Select City</option>
+                                        <option value="1">Depend On Country</option>
+                                        <option value="2">New York</option>
+                                        <option value="3">London</option>
+                                        <option value="4">Mumbai</option>
+                                        <option value="5">Toronto</option>
+                                        <option value="6">Sydney</option>
+                                        <option value="7">Berlin</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Venue/Palace Selection -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Select Venue/Palace">
+                                        <option selected>Select Palace</option>
+                                        <option value="1">Depend On City</option>
+                                        <option value="2">Grand Ballroom</option>
+                                        <option value="3">Palace Gardens</option>
+                                        <option value="4">Ocean View Hall</option>
+                                        <option value="5">Luxury Palace</option>
+                                        <option value="6">Exclusive Estate</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Event Type -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Select Event Type">
+                                        <option selected>Select Event Type</option>
+                                        <option value="1">Wedding</option>
+                                        <option value="2">Corporate Event</option>
+                                        <option value="3">Birthday Party</option>
+                                        <option value="4">Private Gathering</option>
+                                        <option value="5">Festival Celebration</option>
+                                        <option value="6">Charity Event</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Number of Guests -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="No. Of Guests">
+                                        <option selected>No. Of Guests</option>
+                                        <option value="1">100-200</option>
+                                        <option value="2">300-400</option>
+                                        <option value="3">500-600</option>
+                                        <option value="4">700-800</option>
+                                        <option value="5">900-1000</option>
+                                        <option value="6">1000+</option>
+                                        <option value="7">200-300</option>
+                                        <option value="8">400-500</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Food Preference (Veg/Non-Veg) -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Select Food Preference">
+                                        <option selected>Select Food Preference</option>
+                                        <option value="1">Vegetarian</option>
+                                        <option value="2">Non-Vegetarian</option>
+                                        <option value="3">Vegan</option>
+                                        <option value="4">Gluten-Free</option>
+                                        <option value="5">Halal</option>
+                                        <option value="6">Kosher</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Cuisine Preference -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Select Cuisine">
+                                        <option selected>Select Cuisine</option>
+                                        <option value="1">Indian</option>
+                                        <option value="2">Chinese</option>
+                                        <option value="3">Italian</option>
+                                        <option value="4">Mexican</option>
+                                        <option value="5">Mediterranean</option>
+                                        <option value="6">American</option>
+                                        <option value="7">Continental</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- Dietary Restrictions -->
+                                <div class="col-lg-4 col-md-6">
+                                    <select class="form-select border-primary p-2" aria-label="Dietary Restrictions">
+                                        <option selected>Select Dietary Restrictions</option>
+                                        <option value="1">None</option>
+                                        <option value="2">No Dairy</option>
+                                        <option value="3">No Nuts</option>
+                                        <option value="4">No Shellfish</option>
+                                        <option value="5">Low Carb</option>
+                                        <option value="6">Low Sugar</option>
+                                    </select>
+                                </div>      
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <input type="name" class="form-control border-primary p-2" placeholder="Enter Your Name">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <img src="static/img/background-site.jpg" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Book Us End -->
+
+        
+        <!-- Team Start -->
+        <div class="container-fluid team py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Team</small>
+                    <h1 class="display-5 mb-5">We have experienced chef Team</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- Chef 1: Sanjeev Kapoor -->
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top" src="static/img/team-1.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Sanjeev Kapoor</h4>
+                                <p class="text-white mb-0">Celebrity Chef & Restaurateur</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Chef 2: Vikas Khanna -->
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top" src="static/img/team-2.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Vikas Khanna</h4>
+                                <p class="text-white mb-0">Michelin-Starred Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Chef 3: Ranveer Brar -->
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top" src="static/img/team-3.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Tarla Dalal</h4>
+                                <p class="text-white mb-0">Famous Chef & Cookbook Author</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Chef 4: Madhur Jaffrey -->
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top" src="static/img/team-4.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Madhur Jaffrey</h4>
+                                <p class="text-white mb-0">Iconic Indian Chef & Cookbook Author</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
+                    <h1 class="display-5 mb-5">What Our Customers say!</h1>
+                </div>
+                <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">John Doe</h4>
+                                <p class="m-0">Software Engineer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"The food was absolutely delicious and the service was exceptional. I highly recommend this place to everyone!<br>"</p>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Emily Smith</h4>
+                                <p class="m-0">Graphic Designer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"I had an amazing experience! The staff was friendly, and the ambiance was perfect for a relaxing dinner. Will be back again!"</p>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Michael Johnson</h4>
+                                <p class="m-0">Business Consultant</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"A delightful experience with a wide variety of food options. The flavors were fresh, and the portions were perfect!"</p>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Sarah Lee</h4>
+                                <p class="m-0">Marketing Director</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"The ambiance, service, and food were absolutely outstanding. A fantastic place for both work and family gatherings."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Olivia Taylor</h4>
+                                <p class="m-0">UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"An amazing experience from start to finish! The staff was very friendly, and the environment was perfect for working."</p>
+                        </div>
+                    </div>
+                
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Sophia Martin</h4>
+                                <p class="m-0">Content Writer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"I had the best time! The food was fantastic, and the atmosphere was cozy and welcoming. A place I’ll definitely visit again."</p>
+                        </div>
+                    </div>
+                
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Liam Roberts</h4>
+                                <p class="m-0">Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"The quality and presentation of the dishes were impeccable. I’ll be recommending this place to everyone I know!"</p>
+                        </div>
+                    </div>
+                
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item rounded bg-light">
+                        <div class="d-flex mb-3">
+                            <img src="static/img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                            <div class="position-absolute" style="top: 15px; right: 20px;">
+                                <i class="fa fa-quote-right fa-2x"></i>
+                            </div>
+                            <div class="ps-3 my-auto">
+                                <h4 class="mb-0">Mia Johnson</h4>
+                                <p class="m-0">Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="fs-5 m-0 pt-3">"I had a wonderful experience here. Everything was flawless – from the food to the ambiance. A must-visit spot!<br>"</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+         <!-- Blog Start -->
+         <div class="container-fluid blog py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Blog</small>
+                    <h1 class="display-5 mb-5">Be the First to Read Our News</h1>
+                </div>
+                <div class="row gx-4 justify-content-center">
+                    <!-- Blog Post 1 -->
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="static/img/blog-1.jpg" class="img-fluid w-100" alt="Blog Image 1">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">1</p>
+                                        <p class="fw-bold mb-0">Jan</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to Get More Taste in Your Food</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Blog Post 2 -->
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="static/img/blog-2.jpg" class="img-fluid w-100" alt="Blog Image 2">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">22</p>
+                                        <p class="fw-bold mb-0">Mar</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">The Secrets Behind Perfect Spices in Your Dishes</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Blog Post 3 -->
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="static/img/blog-3.jpg" class="img-fluid w-100" alt="Blog Image 3">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to Enhance the Flavor Profile of Your Food</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary">Cater<span class="text-dark">Serv</span></h1>
+                            <p class="lh-lg mb-4">CaterServ specializes in premium catering, offering expert chefs, customized menus, and seamless service for unforgettable events.</p>
+                            <div class="footer-icon d-flex">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/dhruv_patel_1401_?igsh=Nng4NXdpOTU1YzNk" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/dhruv-patel-9a85a82a2/" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Special Facilities</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Vastal,Ahmedabad,Gujarat</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> +91 93161 11223</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> dhruvpatel14106@gmail.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> 24/7 Hours Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="static/img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="static/img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="static/img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="static/img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="static/img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="static/img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>CaterServ</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://www.linkedin.com/in/dhruv-patel-9a85a82a2/">Dhruv Patel</a> Distributed By <a class="border-bottom">Vanya Technology</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="static/lib/wow/wow.min.js"></script>
+        <script src="static/lib/easing/easing.min.js"></script>
+        <script src="static/lib/waypoints/waypoints.min.js"></script>
+        <script src="static/lib/counterup/counterup.min.js"></script>
+        <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+        <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="static/js/main.js"></script>
+    </body>
+</html>
